@@ -1,20 +1,13 @@
 package com.kffuck.mikum.clfgo;
 
-import android.content.Context;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationListener;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -43,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         mLocationClient.setLocationListener(mLocationListener);
         mLocationClient.startLocation();
     }
-
 
 }
 
